@@ -1,6 +1,6 @@
 ---
 Description: >-
-	All the code sample and notes I created while learning about bash scripting are here ....
+ All the code sample and notes I created while learning about bash scripting are here ....
 ---
 
 ## notes.txt
