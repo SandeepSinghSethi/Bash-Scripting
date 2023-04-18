@@ -1,0 +1,35 @@
+'''''''''''''''''''''''''
+1. $? contains the return code of the previously executed command.
+
+2. We can use also the logical operators to get the return codes like : mkdir /tmp/setter && cp /bin/bash /tmp/setter
+or with a ||.
+
+3. ';' will just execute commands normally.
+
+4. The script when executed exits with the return code of the last command executed on the script , unless we specify the exit <num> to specify the exit status.
+
+5. Ways to declare a function is by using the function keyword or by simply using the name of the function , and call it by just calling it by the name but without () i.e.,
+	function hello()
+	{
+	}
+	hello   <----
+
+6. To declare some local variables which needed to be in the functions' lexical scope then we can use 'local' keyword to declare the keyword.
+
+7. $@ <- is used to get all the arguments of the script.
+
+8. In a function the return codes can be specified with the 'return <num>' keyword or by the last command executed is used as the return code.
+
+9. *. is used to match all characters and ?. is used to match exactly one character.
+
+10. We can use pre-specified ranges of bash -> [:digit:],[:alpha:],[:alnum:],[:spaces:],[:upper:],[:lower:].
+
+11. shift is used to shift the pointer of the argument to one time , if $1 = hello and $2 = world , after shift $1 will be world .
+
+12. test command can be used to debug our shell scripts.
+
+13. set -x/+x can be used withing the entire bash script by appending -x in the shebang line or in some parts of the bash script by just writing set -x (to on) and set +x (to off) the dubugging of the script.
+
+14. set -e/+e can be used to halt the scripts if anything goes wrong , also can be used at the top , at the shebang line "/bin/bash -e" or in certain parts of the script by set -e/+e.
+
+15. set -v/+v is used to display each and every line of the script to be displayed as an output along with the expected script output.
